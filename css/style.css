@@ -1,0 +1,868 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+
+}
+
+body{
+  background-color: white;
+}
+.header{
+background-color: hsl(0, 0%, 0%,0.5);
+width: 100%;
+height: 60px;
+position: fixed;
+top:0;
+left: 0;
+
+overflow: auto;
+z-index: 30;
+
+}
+
+.imglog{
+    width: 15%;
+    height: 60px;
+    margin-left: 75px;
+    float: left;
+}
+.ulheader li{
+    list-style-type: none;
+    display: inline-block;
+float: right;
+margin-top: 15;
+margin-right: 25;
+
+}
+.ulheader li a{
+ 
+  text-decoration: none;
+  color: white;
+  font-size: 18;
+
+
+}
+.sec1{
+  background-image: url(../image\ 1p/uu.jpg);
+
+background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+background-repeat: repeat;
+position: relative;
+}
+.overlay1{
+background-color: rgb(8, 8, 8,0.5);
+width: 100%;
+height: 100vh;
+position: absolute;
+top:0;
+left: 0;
+}
+.content{
+  text-align: center;
+  background-color:rgb(5, 5, 5,0.9);
+position: absolute;
+width: 60%;
+height: 50%;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+
+
+}
+.content h4{
+  color: red;
+  margin: 15px 0px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.content h2{
+ 
+  color: white;
+margin-bottom: 15px;
+font-size: 40px;
+
+}
+
+.content p{
+  color: white;
+  margin-bottom: 15px;
+}
+.content .sec1-bu{
+width: 150px;
+height: 40px;
+margin-bottom: 20px;
+font-size: 15px;
+font-weight: 600;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+margin:0px 5px ;
+border: 0px ;
+border-radius: 3%;
+
+}
+.b1{
+  background-color: red;
+  color: white;
+}
+.b2{
+background-color: white;
+color: black;
+
+}
+.sec1-bu:hover{
+  opacity: 0.5;
+}
+
+.container{
+width: 90%;
+height:100wh;
+margin: auto;
+
+
+
+}
+.moviep{
+ 
+  background-color: white;
+overflow: auto;
+
+}
+.moviep > h2{
+  font-size: 40;
+}
+.m{
+  margin: 0 5%;
+
+}
+.imgmovie{
+  width: 30%;
+background-color: black;
+margin-left: 5%;
+margin: 15px ;
+  float: left;
+  text-align: center;
+text-align: center;
+
+position: relative;
+}
+.overlaym{
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+left: 0;
+transition: 0.5s;
+opacity: 0;
+text-align: center;
+}
+.overlaym h3{
+  color:white;
+  font-size: 20px;
+margin-top: 60px;
+}
+.overlaym p{
+  color: red;
+  margin-top: 10px;
+}
+.overlaym i{
+  font-size: 40px;
+  background-color:rgba(11, 11, 11, 0);
+  color:#4267B2;
+  margin: 15px 10px;
+  
+}
+.imgmovie:hover .overlaym{
+  background-color: rgba(0, 0, 0, 0.9);
+opacity: 1;
+}
+
+.moviep h2{
+  text-align: center;
+}
+.wel-p{
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+overflow: auto;
+text-align: center;
+}
+
+.wel-ch{
+width:30%;
+height: 230px;
+
+margin: 5% 0px;
+float: left;
+border: 1px black solid;
+ position: relative; 
+}
+.wel-overlay{
+  height: 100%;
+  width: 100%;
+top: 0;
+left: 0;
+ 
+ position: absolute;
+ 
+ background-color:rgb(0, 0, 0,0);
+transition: 1s;
+}
+.wel-ch p{
+  margin: 20px 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: gray;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.wel-ch:hover .wel-overlay{
+ background-color: rgb(32, 30, 30,1);
+}
+
+.wel-ch::after{
+position: absolute;
+content: "";
+height: 0;
+width: 0;
+top:0;
+left: 0;
+background-color: rgb(32, 30, 30,0.1);
+opacity: 0;
+transition: 0.4s;
+}
+.wel-ch a{
+text-decoration: none;
+color: #4267B2;
+}
+.wel-ch:hover h2{
+
+color: white;
+}
+.wel-ch i{
+  margin-bottom: 20px;
+color: #4267B2;
+
+}
+
+
+.wel-ch:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.mid{
+  margin: 5% 5%;
+}
+.wel-ch i{
+  padding-top: 15px;
+  font-size: 30
+
+}
+.wel-p > h2{
+ font-size: 40;
+ margin-top: 5%;
+}
+
+
+
+.last-sec{
+
+  background-color: rgb(32, 30, 30);
+  text-align: center;
+  width: 100vw;
+  height: 60%;
+  
+}
+.last-sec a{
+  text-decoration: none;
+}
+.last-sec a i{
+ 
+  font-size: 50;
+  color: grey;
+margin-left: 15px;
+}
+.last-sec >p{
+  color: grey;
+  font-size: 13px;
+margin: 15px 0px;
+}
+.last-sec a i:hover{
+
+  color: white;
+
+}
+.icon p{
+  color: white;
+  font-size: 19;
+  margin: 10px 0;
+}
+.last-img{
+  margin-top: 10px;
+}
+.line{
+  background-color:red;
+  width: 50px;
+  height: 3px;
+  margin: auto;
+}
+.linee{
+  background-color:red;
+  width: 250px;
+  height: 3px;
+  
+}
+.charcater-p{
+  overflow: auto;
+
+}
+.charcater-p >h2{
+
+  font-size: 40;
+  margin-top: 5%;
+text-align: center;
+}
+.character-img{
+  margin-left: 15px;
+}
+.character-info i{
+  margin:15px 0px ;
+font-size: 12px;
+margin-left: 15px;
+}
+.character-info span{
+  font-size: 12px;
+ 
+}
+.character-info h2{
+  margin:15px 0px ;
+margin-left: 12px;
+}
+.character-info p{
+  margin:15px 0px ;
+color: gray;
+margin-left: 12px;
+font-family: 'Roboto', sans-serif;
+font-weight: 600;
+
+}
+.charcater-ch a{
+  text-decoration: none;
+  margin-left: 12px;
+
+}
+
+.charcater-ch::after{
+position: absolute;
+content:"";
+width: 100%;
+height: 0;
+top: 0;
+left: 0;
+background-color: rgb(0, 0, 0,0.4);
+opacity: 0;
+transition: 0.4s;
+}
+.charcater-ch:hover::after{
+width: 100%;
+height: 100%;
+opacity: 1;
+
+}
+  
+.charcater-ch{
+margin-top: 50px;
+  width: 30%;
+ 
+float: left;
+position: relative;
+}
+.cm{
+margin:50px 5%;
+
+}
+
+
+.comics-p{
+  overflow: auto;
+ 
+}
+.comics-ch{
+ text-align: center; 
+  width: 30%;
+  float: left;
+   background-color: gray;
+   margin-top: 50px;
+   position: relative;
+   padding: 50px;
+}
+.com{
+  margin:50px 5%;
+}
+.comics-p >h2{
+  font-size: 40;
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+ .comics-img{
+ 
+  background-color:gray;
+ 
+position: relative;
+
+
+
+} 
+.comics-overlay{
+
+  width: 100%;
+  height: 100%;
+opacity: 0;
+  top:0;
+  
+position: absolute;
+}
+.comics-overlay a {
+  
+  display: block;
+  width: 40px;
+  height: 40px;
+  color:white ;
+  background: #4267B2;
+text-decoration: none;
+  font-size: 30px;
+  margin-left: auto;
+}
+.comics-overlay a i{
+line-height: 40px;
+
+}
+.comics-img{
+  width: 230px;
+  height: 250px;
+}
+.comics-overlay a i{
+  
+
+}
+.comics-ch:hover .comics-overlay{
+
+  opacity: 1;
+  background-color: rgb(14, 14, 14,0.5);
+}
+.comics-ch::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(14, 14, 14,0.5);
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.comics-ch:hover::after{
+
+width: 100%;
+height: 100%;
+opacity: 1;
+
+}
+
+.comics-info p{
+  color: rgb(66, 63, 63);
+}
+.comics-ch:hover .comics-info p{
+  color: red;
+}
+.comics-info h2{
+  color:black;
+}
+.comics-ch:hover .comics-info h2{
+  color: white;
+}
+.cast-p{
+  width: 100vw;
+  height: 300px;
+  background-image: url(../image\ 1p/ironmanandcap.jpg);
+  background-attachment: fixed;
+ 
+  background-size: cover;
+ 
+  overflow: auto;
+ margin: auto;
+}
+.cast-ch img{
+  border-radius: 50%;
+display: inline;
+}
+.cast-ch{
+  width: 40%;
+  margin:100px 5% ;
+  background-color: rgb(5, 5, 5,0.7);
+  float: left;
+ overflow: auto;
+
+  }
+ .cast-img
+ {
+  
+  float: left;
+ }
+.pay-p >h2{
+  font-size: 40;
+ margin-top: 5%;
+}
+.cast-info{
+  width: 76%;
+  margin:25px 10px;
+ 
+  float: left;
+}
+
+.cast-info >p{
+ color: #4267B2;
+  font-size: 15;
+ 
+ 
+  
+}
+.cast-ch h4{
+ 
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+}
+.cast-ch >p{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.pay-p{
+ margin: auto;
+ text-align: center;
+  overflow: auto;
+  height: 100vh;
+  width: 100%;
+ 
+
+}
+
+.pay-ch{
+  position: relative;
+  width: 25%;
+  float: left;
+  height: 315px;
+  border: 1px black solid;
+  margin: 75px 0px;
+  margin-left: 6%;
+ 
+  
+}
+.pm{
+  max-width:100px 5% ;
+
+}
+.pay- {
+  padding:10px 0px;
+  margin-bottom: 15px;
+
+}
+.h21{
+  background-color: red;
+}
+.h22{
+  background-color: green;
+}
+.h23{
+  background-color: gold;
+}
+.pay-ch h4 p{
+  font-size: 13;
+}
+.pay-ch:hover .pay-  {
+background-color: black;
+  color:white;
+}
+.pay-ch:hover h4{
+
+border-color:silver;
+color:red ;
+
+} 
+.pay-ch:hover .pay-bu{
+  border-color: silver;
+}
+
+
+.pay-ch >p{
+  color: gray;
+margin: 30px 15px;
+
+}
+.pay-ch .pay-bu{
+width: 100px;
+  
+  height: 30px;
+  font-size: 15;
+  font-weight: 700;
+
+
+}
+
+.bb1{
+border-color: red;
+}
+.bb2{
+  border-color: green;
+}
+.bb3{
+  border-color: gold;
+}
+.pay-ch h4{
+display: inline-block;
+  font-size: 25;
+  border: 2px black solid;
+border-radius: 60%;
+padding:23px 23px;
+
+}
+.pay-ch::after{
+position: absolute;
+content: "";
+width: 100%;
+height: 0;
+top:0;
+left: 0;
+background-color:rgba(0, 0, 0, 0.5);
+
+opacity: 0;
+}
+.pay-ch:hover::after{
+
+width: 100%;
+height: 100%;
+opacity: 1;
+transition:0.5s ;
+}
+.avg{
+
+width: 100vw;
+height: 300px;
+background-attachment: fixed;
+background-image: url(../image\ 1p/spider.jpg) ;
+
+background-size: cover;
+overflow: auto;
+
+}
+.vv{
+float: left;
+width: 15%;
+margin-top:140px ;
+margin-left: 7%;
+text-align: center;
+
+}
+.vv h2{
+  color: white;
+}
+.vv p{
+  color:black;
+}
+.vv a{
+
+font-size: 50px;
+}
+.like a{
+
+  color: red;
+}
+.games a{
+  color:orangered;
+}
+.award a{
+  color: gold;
+}
+.views a{
+  color:black;
+}
+.choose-p{
+width: 100%;
+overflow: auto;
+
+padding-bottom:50px ;
+}
+.choose-p h2{
+  font-size: 40px;
+  padding-top:100px ;
+  display: inline-block;
+
+  
+}
+.choose-img img{
+  width: 100%;
+height: 400px;;
+
+}
+.choose-info h4{
+  display: inline-block;
+}
+.choose-info ul li{
+  margin: 20px 0px;
+}
+.choose-info ul li a{
+  font-size: 20;
+  text-decoration: none;
+  color: red;
+}
+.choose-info ul li i{
+  font-size: 20px;
+ color: green;
+ margin-right: 10px;
+}
+.choose-info >p{
+color: gray;
+  font-size: 20px;
+}
+.choose-info ul li p{
+  margin-left:35px;
+  color: gray;
+}
+
+.choose-img ul li {
+display: inline-block;
+ margin-left: 15px;
+ margin-top: 10px;
+
+}
+.choose-img ul li i{
+font-size: 13px;
+  color: gray;
+}
+.choose-img ul li i:hover{
+ 
+    color:red;
+  }
+
+
+
+
+
+.choose-img{
+  
+  float: right;
+  width: 40%;
+  height: 400px;
+ background-color: white;
+  text-align: center;
+  
+}
+
+.choose-info{
+ 
+ float: left;
+width: 40%;
+height:400px ;
+margin-top: 50px;
+
+
+}
+.offer-p{
+ 
+  margin: auto;
+  width: 80%;
+  height: 100vh;
+overflow: auto;
+;
+}
+.offer-p h2{
+  text-align: center;
+ 
+  font-size: 40;
+  margin-top: 5%;
+ 
+}
+
+.offer-ch{
+  width: 30%;
+  height: 160px;
+ 
+  padding-top: 10px;
+  padding-left: 10px;
+  float: left;
+border: 1px black solid;
+margin: 15px 0px;
+position: relative;
+
+}
+.offer-overlay{
+  height: 100%;
+  width: 100%;
+top: 0;
+left: 0;
+ 
+ position: absolute;
+ 
+ background-color:rgb(0, 0, 0,0);
+transition: 1s;
+}
+.offer-ch:hover .offer-overlay{
+  background-color: rgb(32, 30, 30,1);
+ }
+.offer-ch span{
+font-weight: 900;
+
+font-size: 25px;
+font-weight: bold;
+  display: inline-block;
+
+}
+.offer-ch:hover span{
+  color: white;
+}
+.offer-ch i{
+  padding-left: 15px;
+  padding-top: 15px;
+  color: #4267B2;
+  font-size:30px;
+  
+}
+.offer-ch p{
+color: gray;
+  padding:15px 35px ;
+  padding-left: 50px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+.om{
+
+margin-left: 5%;
+margin-right: 5%;
+}
+.offer-ch::after{
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  top:0;
+  left: 0;
+  background-color: rgb(32, 30, 30,0.1);
+  opacity: 0;
+  transition: 0.3s;
+}
+.offer-ch:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+  
